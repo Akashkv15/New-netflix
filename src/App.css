@@ -1,0 +1,55 @@
+#root{
+  padding :0 !important;
+  margin:0;
+  box-sizing: border-box;
+  background-color: black;
+}
+.maindiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.transparent-navbar {
+  background-color: black!important;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+#bu{
+  background-color: red;
+  border: none;
+}
+/* src/Row.css */
+.row {
+  color: white;
+  margin-left: 20px;
+}
+
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+.row__posters::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.row__card {
+  margin-right: 10px;
+  text-align: center;
+}
+
+.row__poster {
+  max-height: 200px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.row__poster:hover {
+  transform: scale(1.05);
+}
