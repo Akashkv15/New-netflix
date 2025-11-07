@@ -166,3 +166,18 @@ color: red;
   
   text-shadow: 2px 2px 4px rgb(255, 0, 0);
 }
+#img {
+  width: 200px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 📱 Mobile style — move logo to top center */
+@media (max-width: 768px) {
+  #img {
+    position: absolute;
+    top: -55px;          /* distance from the top */
+    left: 25%;         
+    transform: translateX(-50%); /* adjust for perfect centering */
+    width: 150px;       /* slightly smaller on mobile */
+  }
+}

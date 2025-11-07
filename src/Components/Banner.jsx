@@ -53,7 +53,7 @@ function Banner({ fecturl, className }) {
       >
         <Container>
           <Navbar.Brand href="#home" style={{ color: 'white', fontWeight: 'bold' }}>
-            <img src={logo} alt="" style={{width:'200px'}} />
+            <img id='img' src={logo} alt="" style={{width:'200px'}} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
