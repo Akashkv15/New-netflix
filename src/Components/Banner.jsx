@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import  logo from '../assets/logo.png'
 import { Button } from 'react-bootstrap'
-function Banner({ fecturl }) {
+function Banner({ fecturl, className }) {
   const [movie, setMovie] = useState([])
 
   async function fetchData() {
@@ -17,7 +17,7 @@ function Banner({ fecturl }) {
 
   useEffect(() => {
     fetchData()
-  }, [])
+  }, [fecturl])
 
   return (
     <div
@@ -74,10 +74,10 @@ function Banner({ fecturl }) {
 
       
       <div style={{ position: 'absolute',top:'45%' }}>
-        <h1 style={{ fontSize: '3rem', fontWeight: 'bold' }}>
+        <h1 className={`${className}`}style={{ fontSize: '3rem', fontWeight: 'bold',}}>
           {movie.title}
         </h1>
-        <h4>Released on {movie.release_date}</h4>
+        <h4 className={`${className}`}>Released on {movie.release_date}</h4>
       </div>
     </div>
   )

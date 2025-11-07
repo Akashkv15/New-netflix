@@ -40,16 +40,129 @@
 .row__card {
   margin-right: 10px;
   text-align: center;
-}
+ background-color: #111111; 
+  border-radius: 12px;
 
+ box-shadow: 
+   rgba(255, 0, 0, 0.945) 0px -2px 4px,     /* top red glow */
+  rgba(255, 0, 0, 0.955) 0px 2px 4px,      /* bottom red glow */
+  rgba(255, 0, 0, 0.756) 2px 0px 4px,      /* right red glow */
+  rgba(255, 0, 0, 0.656) -2px 0px 4px,     /* left red glow */
+  rgba(255, 0, 0, 0.978) 0px 0px 8px 2px inset;  /* soft inner red glow */
+
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;}
+.row__card img{
+  width: 200px;
+  object-fit: cover;
+}
 .row__poster {
   max-height: 200px;
-  width: 150px;
+  width: 200px;
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s;
 }
 
-.row__poster:hover {
+/* .row__poster:hover {
   transform: scale(1.05);
+} */
+.row__card:hover {
+  transform: scale(1.08);
+}
+
+.movie__name{
+    font-family: "Playwrite HU", cursive;
+}
+.row__card-new {
+  max-height: 300px;      
+      font-family: "Playwrite HU", cursive;
+transition: transform 0.3s ease, box-shadow 0.3s ease; }
+
+.row__card-new img {
+  width: 350px;       
+  height: 200px;      
+  object-fit: cover; 
+  border-radius: 10px;
+  /* transition: transform 0.3s; */
+ font-family: "Playwrite HU", cursive;
+}
+.row__card-new:hover {
+   transform: scale(1.08); 
+  /* transition: transform 0.3s; */
+}
+.special-row{
+   font-family: "Playwrite HU", cursive;
+}
+
+.horror-row h2 {
+  color: red;
+  text-shadow: 2px 2px 8px black;
+  font-family: "Playwrite HU", cursive;
+    margin-top: 10px;
+}
+.trending-row h2{
+  color:red;
+  font-family: "Exo 2", sans-serif;
+}
+.trending-row h5{
+  /* color:red; */
+   font-family: "Exo 2", sans-serif;
+     margin-top: 10px;
+}
+.comedy-row h2{
+font-family: "Caveat", cursive;
+color: red;
+}
+.comedy-row h5{
+  font-family: "Caveat", cursive;
+    margin-top: 10px;
+}
+.toprated-row h2{
+     font-family: "Cookie", cursive;
+  color: red;
+  font-size: 45px;
+}
+.toprated-row h5{
+     font-family: "Cookie", cursive;
+  font-size: 25px;
+    margin-top: 10px;
+}
+.romance-row h2{
+  color: red;
+  
+ font-family: "Yellowtail", cursive;}
+ .romance-row h5{
+   font-family: "Yellowtail", cursive;
+     margin-top: 10px;
+ }
+ .doc-row h2{
+  color: red;
+  font-family: "Montserrat Alternates", sans-serif;
+ }
+ .doc-row h5{
+    font-family: "Montserrat Alternates", sans-serif;
+  margin-top: 10px;
+ }
+ .netflix-row h2{
+  color: red;
+
+  font-family: "Architects Daughter", cursive;
+ }
+ .netflix-row h5{
+    font-family: "Architects Daughter", cursive;
+  margin-top: 10px;
+ }
+ .action-row h2{
+   font-family: "Asimovian", sans-serif;
+   color: red;
+ }
+ .action-row h5{
+   font-family: "Asimovian", sans-serif;
+   margin-top: 10px;
+ }
+ .banner-title-1 {
+   font-family: "Asimovian", sans-serif;
+  
+  text-shadow: 2px 2px 4px rgb(255, 0, 0);
 }

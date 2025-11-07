@@ -9,15 +9,14 @@ function App() {
  
   return (
     <>
-      <Banner fecturl={requests.fetchTopRated}/>
-      <Row title="Trending" fecturl={requests.fetchTrending}/>
-      <Row title="Top Rated" fecturl={requests.fetchTopRated}/>
-     <Row title="Action Movies" fecturl={requests.fetchActionMovies}/>
-     <Row title="Comedy Movies" fecturl={requests.fetchComedyMovies}/>
-     <Row title="Horror Movies" fecturl={requests.fetchHorrorMovies}/>
-     <Row title="Romantic Movies" fecturl={requests.fetchRomanceMovies}/>
-     <Row title="Doccumentaries" fecturl={requests.fetchDocumentaries}/>
-     <Row title="Netflix Orginal" fecturl={requests.fetchNetflixOriginals}/>
+<Banner fecturl={requests.fetchTopRated} className="banner-title-1" />      <Row title="Trending" fecturl={requests.fetchTrending} className="trending-row" />
+      <Row title="Top Rated" fecturl={requests.fetchTopRated} className="toprated-row" />
+      <Row title="Action Movies" fecturl={requests.fetchActionMovies} className="action-row" />
+      <Row title="Comedy Movies" fecturl={requests.fetchComedyMovies} className="comedy-row" />
+      <Row title="Horror Movies" fecturl={requests.fetchHorrorMovies} isposter className="horror-row" />
+      <Row title="Romantic Movies" fecturl={requests.fetchRomanceMovies} className="romance-row" />
+      <Row title="Documentaries" fecturl={requests.fetchDocumentaries} className="doc-row" />
+      <Row title="Netflix Originals" fecturl={requests.fetchNetflixOriginals} className="netflix-row" />
     </>
   )
 }
